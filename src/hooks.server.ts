@@ -14,7 +14,7 @@ import Twitch from '@auth/sveltekit/providers/twitch';
 import Pinterest from '@auth/sveltekit/providers/pinterest';
 import Email from '@auth/sveltekit/providers/email';
 import { setupSidecar } from '@spotlightjs/spotlight/sidecar';
-import { Handle, HandleServerError, redirect } from '@sveltejs/kit';
+import { type Handle, type HandleServerError, redirect } from '@sveltejs/kit';
 import { dev } from '$app/environment';
 import { adapter } from '$/server/db';
 import { ulid } from 'ulid';
