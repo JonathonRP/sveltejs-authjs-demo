@@ -58,14 +58,14 @@ function authorization() {
 		const session = await event.locals.auth();
 		
 
-		if (!session && !route.id.includes('auth')) {
-			console.log('redirect hook', route)
-			return redirect(302, loginAndResume(url, '/auth'));
-		}
+		// if (!session && !route.id?.includes('auth')) {
+		// 	console.log('redirect hook', route)
+		// 	return redirect(302, loginAndResume(url, '/auth'));
+		// }
 
-		if (!headers.get('Authorization') && route.id?.includes('finanseer')) {
-			console.log(`/user/linkBuxferAccount${url.search.slice(1)}`);
-		}
+		// if (!headers.get('Authorization') && route.id?.includes('finanseer')) {
+		// 	console.log(`/user/linkBuxferAccount${url.search.slice(1)}`);
+		// }
 
 		// REVIEW - is this needed?
 		// if (session && redirectTo) {
